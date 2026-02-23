@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        nav {
+            display: flex;
+            background-color: lightgreen;
+            /* creat a space between content */
+            justify-content: space-between;
+            /* put in box center or middle of the box */
+            align-items: center;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 20px 20px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        #section1{
+            display: flex;
+            background-color: lightblue;
+        }
+        .box{
+            height: 200px;
+            width: 25%;
+            border: 5px solid lightcoral;
+        }
+        #section2{
+            display: flex;
+        }
+       .box1{
+            height: 300px;
+            width: 33.33%;
+            border: 2px solid;
+        }
+
+        #box2{
+            display: flex;
+            flex-direction: row;
+        }
+        .left,.right{
+            width: 50%;
+            height: 200px;
+            border: 2px solid gray;
+        }
+        #box3{
+            display: flex;
+            flex-direction: column;
+        }
+        .top,.bottom{
+            height: 50%;
+            width: 100%;
+            border: 2px solid green;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Main logo
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Settings</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Help</a></li>
+        </ul>
+        <div class="icons">
+            Main Icon
+        </div>
+    </nav>
+
+
+    <section id="section1">
+
+        <div class="box">1</div>
+        <div class="box" id="box2">
+            <div class="left">Left side</div>
+            <div class="right">Right side</div>
+        </div>
+        <div class="box" id="box3">
+            <div class="top">Top box</div>
+            <div class="bottom">Bottom box</div>
+        </div>
+        <div class="box">4</div>
+    </section>
+
+    <section id="section2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+
+    </section>
+
+
+
+
+</body>
+
+</html>

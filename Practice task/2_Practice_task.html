@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Task</title>
+
+    <style>
+        .main {
+            height: 300px;
+            width: 600px;
+            margin: 100px auto;
+            /* border: 5px; solid; */
+            overflow: hidden;
+
+        }
+
+        .left {
+            height: 300px;
+            width: 700px;
+            background: rgba(0, 0, 0, 0.2);
+            transform: translate(-10%, 0);
+            margin: 0 -25px;
+            background-image: url(image5.jpg);
+            transition: 4s;
+        }
+
+        .main:hover .left {
+            transform: translate(0%, 0);
+        }
+
+        .frame {
+            height: 200px;
+            width: 500px;
+            border: 6px solid;
+            transform: translate(25px, -250px);
+            transition: 5s;
+            border-color: white;
+            visibility: hidden;
+        }
+
+        .main:hover .frame {
+            transform: translate(50px, -250px);
+            visibility: visible;
+        }
+
+        .border {
+
+            height: 300px;
+            width: 600px;
+            margin: 100px auto;
+            border: 3px solid;
+            border-color: rgba(255, 240, 200, 0.2);
+            transform: translate(-3%, -184%);scale: (0.95, 0.9);
+
+        }
+
+        .text1 {
+
+            height: 100px;
+            width: 200px;
+            font-size: 30px;
+            color: white;
+            transform: translate(165%, -900px);
+        }
+
+        .main:hover .text1 {
+            transform: translate(350px, -900px);
+            visibility: visible;
+
+        }
+
+        .text2 {
+            transform: translate(300ppx, -900px);
+            transition: 4s;
+            color: red;
+            font-size: 38px;
+            visibility: visible;
+
+        }
+
+        .main:hover .text2 {
+            transform: translate(350px, -900px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left"></div>
+        <div class="border"></div>
+        <div class="frame"></div>
+        <div class="text">FALL AHEAD</div>
+        <div class="text2">New Arrivals</div>
+    </div>
+
+
+
+</body>
+
+</html>

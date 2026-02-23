@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+
+        ul li {
+
+            display: inline-block;
+            background: lightgreen;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        li::after{
+
+            content: "";
+            height: 5px;
+            width: 0%;
+            background: black;
+           
+            position: absolute;
+            bottom: 100%;
+            right: 0%;
+            transition: 0.5s;
+
+        }
+        li:hover::after{
+            width: 100%;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li>HOME</li>
+        <li>SETTINGS</li>
+        <li>CONTACT US</li>
+        <li>FEATURES</li>
+        <li>HELP</li>
+    </ul>
+
+</body>
+</html>

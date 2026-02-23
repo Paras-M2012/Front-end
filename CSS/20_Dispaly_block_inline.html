@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispaly_block_inline</title>
+    
+    <style>
+
+        .first{
+
+            border: 5px solid;
+            padding: 35px;
+            /* this will block whole display of this content */
+            display: block;
+        }
+
+        .second {
+
+            border: 5px solid;
+            /* this will allow only main div not ul li or span */
+            display: inline;
+        }
+
+        .third{
+
+            border: 5px solid;
+            padding: 50px;
+            /* inline and block is allow to all */
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="first">
+        This is the inline to block details 
+        <ul>
+            inline to block
+            <li>
+                inline to block
+                <span>
+                    inline to block details
+                </span>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="second">
+        This is the block to inline details 
+        <ul>
+            block to inline
+            <li>
+                block to inline
+                <span>
+                    block to inline details
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="third">
+        This is the inline and block details 
+        <ul>
+            block and inline
+            <li>
+                block and inline
+                <span>
+                    block and inline details
+                </span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

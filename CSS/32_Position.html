@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+
+        .main{
+            background-color: blue;
+            display: flex;
+            height: 500px;
+            border: 3px solid green;
+        }
+
+        .box{
+
+            height: 150px;
+            width: 150px;
+            border: 3px solid;
+        }
+
+        /* #box1{
+            position: static;
+            top: 100px;
+        } */
+
+       /* #box2{
+            position: fixed;
+            top: 20px;
+            left: 0;
+            bottom: 20px;
+            right: 20px
+       } */
+
+       /* #box3{
+
+        position: sticky;
+        top: 0px;
+        bottom: 0px;
+       }
+
+       #box4{
+            position: relative;
+            top: 20px;
+            left: 20px;
+          } */
+
+          #box5{
+
+            position: relative;
+          }
+
+          .box1 {
+
+            height: 25px;
+            width: 25px;
+            background-color: red;
+            position: sticky;
+            top: 50%;
+            bottom: 50%;
+          }
+    </style>
+</head>
+<body>
+
+    <!-- THERE ARE 5 TYPES OF POSITION IN BOX TYPES
+     
+        1) STATIC : BY DEFAULT IT IS APPLY { APPLY ON ALL}
+        2) FIXED : APPLY IN ONLY BODY TAG
+        3) STICKY :
+        4) RELATIVE :
+        5) ABSOLUTE-->
+    
+
+        <section class="main">
+
+            <div class="box" id="box 1">1</div>
+            <div class="box" id="box 2">2</div>
+            <div class="box" id="box 3">3</div>
+            <div class="box" id="box 4">4</div>
+            <div class="box" id="box 5">
+                <div class="box1"> Paras </div>
+                <div class="box2"> Riya </div>
+            </div>
+
+            <div class="box" id="box 6">6</div>
+
+        </section>
+
+        <section class="main">1</section>
+        <section class="main">2</section>
+</body>
+</html>

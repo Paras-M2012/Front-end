@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+    <style>
+
+        ul li::first-letter{
+            background-color: blueviolet;
+        }
+        /* particular work in every element */
+        .element::first-line{
+            background-color: red;
+        }
+
+        ul li::before{
+            content: "s";
+            height: 100px;
+            width: 100px;
+        }
+
+        ul li::after{
+            content: "wh";
+        }
+
+    
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Help</li>
+        <li>Settings</li>
+        <li>Features</li>
+    </ul>
+
+
+    <div class="element">
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda provident quis consectetur
+        laudantium asperiores fugit quo at eaque, reprehenderit pariatur fugiat quibusdam illo fuga, possimus
+        perferendis. Dolorem sint quas sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maiores dolor
+        nulla necessitatibus sed deserunt ab ducimus modi repudiandae! Perferendis dolor qui sint tempore quia rem quis
+        accusantium, animi eligendi?
+    
+    </div>
+</body>
+
+</html>

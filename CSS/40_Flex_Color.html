@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex details </title>
+
+    <style>
+        .main{
+            background-color: greenyellow;
+            height: 200px;
+            border: 5px solid;
+            /* this tag will work your row conver into coloumn */
+            display: flex;
+            /* All content will come in center */
+            justify-content: center;
+            align-items: center;
+            /* this will create a space around the boxes */
+            justify-content: space-around;
+            /* create a space between boxes */
+            justify-content: space-between;
+            /* create a space even boxes */
+            justify-content: space-evenly;
+        }
+
+        .main1{
+            background-color: lightgreen;
+            height: 200px;
+            border: 5px solid;
+            display: flex;
+            /* means your content will start form reverse */
+            flex-direction: row-reverse;
+            /* convert in single box or coloumn */
+            flex-direction: column;
+            /* same content start from reverse */
+            flex-direction: column-reverse;
+            
+            align-items: center;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+        }
+
+        #box1{
+            /* this will work only in ID tag you can work particular on single box */
+           /* this will do your content in center of top */
+            align-content: center;
+            /* will do box center */
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div class="main">
+        <div class="box">Paras</div>
+        <div class="box">Saurabh</div>
+        <div class="box">Himanshu</div>
+    </div>
+
+    <div class="main1">
+        <div class="box">Bhavesh</div>
+        <div class="box" id="box1">Sahil</div>
+        <div class="box">Dhruvil</div>
+    </div>
+
+
+    <!-- FLEX - will work only on Either ROW or COLOUMN -->
+     <!-- GRID - will work in both ROW and COLOUMN -->
+</body>
+</html>

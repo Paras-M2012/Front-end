@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Task</title>
+
+    <style>
+        .main {
+            height: 200px;
+            width: 200px;
+            border: 5px solid;
+            margin: 200px auto;
+            background-image: url(image3.jpg);
+            background-size: 100%, 100%;
+            overflow: hidden;
+        }
+
+
+
+        .right {
+            height: 200px;
+            width: 200px;
+            background: rgba(0,0,0,0.1);
+            transform: translate(100%, -100%);
+            transition: 3s;
+
+        }
+
+        .main:hover .right{
+            transform: translate(0%, 0%);
+
+        }
+
+        .left {
+            height: 200px;
+            width: 200px;
+            background: rgba(0,0,0,0.1);
+            transform: translate(-100%, 0%);
+            transition: 3s;
+
+        }
+.main:hover .left{
+    transform: translate(0%, -100%);
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="right">Right box</div>
+        <div class="left">Left box</div>
+    </div>
+
+
+</body>
+
+</html>
