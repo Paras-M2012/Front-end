@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Java script</title>
+</head>
+<body>
+
+    <h1 id="h1">Naroda Orthopedic Hospital</h1>
+
+    <h1 id="main">hello</h1>
+    
+    <!-- DOM : DOCUMENT OBJECT MODEL -->
+
+    <!-- internal JS -->
+
+    <script>
+
+        // 1) console debugg
+
+        // console.log("THis is the sample of JS")
+        // console.log("hello")
+        // console.log("10+20")
+        // console.log("sub : ", 20+10)
+
+        // 2) Document.write
+
+        // document.writeln("Hello This JS data <br>") 
+        // document.writeln("hello <br>")
+        // document.writeln("25+38")
+        // document.writeln("<h1>hello javascript</h1>")
+
+        // 3) getElementByid method innerText
+        // in this you cant apply any tag bold or italic
+        console.log(document.getElementById("h1"))
+        // only for text not html allow
+        document.getElementById("h1").innerText = "<i>Hello shubham</i>"
+
+        // 4) dom .innerHTML
+        console.log(document.getElementById("main"))
+        // if you give ID t
+        // dom interhtml : html and text both allow
+        document.getElementById("main").innerHTML = "<i>Hello javascript</i>"
+
+    </script>
+</body>
+</html>
