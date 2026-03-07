@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Function :  "function" is formally called a method. A method is a block of code within a class that performs a specific task and can be reused throughout a program. 
+        () : You can reuse this 
+
+        There are two types of Function
+
+        1) Predefind Function :
+        2) User defind Function : it can created by user
+
+        Syntex : 
+        function name(){
+            .code
+        }
+            name()
+            name()
+    -->
+
+    <script>
+
+        // 1) Predefind
+        // It works in inpsect and also on browser
+        // console.log("hello")
+        // console.log("1")
+        // document.writeln("Hello Dr")
+        // confirm("Are you sure about it")
+
+
+        // 2) User defind types
+        // It works ony on browser 
+        // category o two types
+        // 1) Without Parameter
+
+        function demo() {
+            console.log("Hello function show")
+            document.writeln("<br>Hello Dr we are here for consulting to you<br>")
+        }
+
+
+        function data() {
+            for (let i = 1; i <= 30; i++) {
+                document.writeln("*")
+            }
+        }
+
+        console.log(sub(80,20))
+
+        data()
+        demo()
+        data()
+        demo()
+
+
+        // 2) With Parameter
+
+        function sum(a,b){
+            console.log("Sum : ",a+b)
+        }
+
+        console.log(sub(80,20))
+
+        sum(30,20)
+        sum(50,40)
+        sum(60,30)
+
+        // parameter ,refre ,agument
+
+        function sub(a,b){
+            return a-b
+        }
+
+        console.log(sub(60,20))
+    </script>
+</body>
+
+</html>
