@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Show</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="/Images/bookmyshow">
+
+    <style>
+        .navbar img {
+            height: 40px;
+            width: 100px;
+        }
+
+        .src {
+            width: 70%;
+        }
+
+        /* .row .col {
+            height: 100%;
+            width: 100%;
+            border: 2px solid;
+            display: flex;
+        } */
+
+        /* .modal-body{
+            height: 100%;
+            width: 100%;
+        } */
+
+        /* .box1{
+            height: 100%;
+            width: 100%;
+            border: 1px solid;
+        } */
+
+        .all {
+            border: none;
+            width: 100%;
+            height: 100%;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main navbar start -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="/Images/bookmyshow" alt="logo">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="src">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search"
+                                placeholder="Search for Movies, Events, Plays, Sports and Activites"
+                                aria-label="Search">
+                            <!-- <button class="btn btn-outline-dark" type="submit">Search</button> -->
+                        </form>
+                    </div>
+
+
+                    <!-- Button trigger modal -->
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Ahmedabad
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-dismiss="close" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="bar w-100 d-flex">
+                                        <input class="form-control" type="search" placeholder="Search for your cities"
+                                            aria-label="Search">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="modal-body">
+                                    <div class="loc">
+                                        <button onclick="openMap()">Detect My Location</button>
+                                        <script>
+                                            function openMap() {
+                                                if (navigator.geolocation) {
+                                                    navigator.geolocation.getCurrentPosition(
+                                                        function (position) {
+                                                            const lat = position.coords.latitude;
+                                                            const lon = position.coords.longitude;
+
+                                                            // Open Google Maps with location
+                                                            const url = `https://www.google.com/maps?q=${lat},${lon}`;
+                                                            window.open(url, "_blank");
+                                                        },
+                                                        function (error) {
+                                                            alert("Error: " + error.message);
+                                                        }
+                                                    );
+                                                } else {
+                                                    alert("Geolocation is not supported by this browser.");
+                                                }
+                                            }
+                                        </script>
+                                    </div>
+
+                                    <h5 style="text-align: center;">Popular Cities</h5>
+                                    <div class="box d-flex w-100 m-2 p-2 gap-4">
+                                        <div class="box1">
+                                            <img src="/Images/chd.avif" alt="">
+                                            <h6 class="text text-align-center">Chandigarh</h6>
+                                        </div>
+                                        <div class="box1"><img src="/Images/chd.avif" alt="">
+                                            <h6 class="text text-align-center">Chandigarh</h6>
+                                        </div>
+                                        <div class="box1"><img src="/Images/chd.avif" alt="">
+                                            <h6 class="text text-align-center">Chandigarh</h6>
+                                        </div>
+                                        <div class="box1"><img src="/Images/chd.avif" alt="">
+                                            <h6 class="text text-align-center">Chandigarh</h6>
+                                        </div>
+                                        <div class="box1"><img src="/Images/chd.avif" alt="">
+                                            <h6 class="text text-align-center">Chandigarh</h6>
+                                        </div>
+                                        <div class="box1"><img src="/Images/chd.avif" alt="">
+                                            <h6 class="text text-align-center">Chandigarh</h6>
+                                        </div>
+                                        <div class="box1"><img src="/Images/chd.avif" alt="">
+                                            <h6 class="text text-align-center">Chandigarh</h6>
+                                        </div>
+                                        <div class="box1"><img src="/Images/chd.avif" alt="">
+                                            <h6 class="text text-align-center">Chandigarh</h6>
+                                        </div>
+                                        <div class="box1"><img src="/Images/chd.avif" alt="">
+                                            <h6 class="text text-align-center">Chandigarh</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view">
+                                    <button class="all">View all Cities</button>
+                                    <div class="modal-dialog3 modal-dialog-centered">
+                                        <ul class="city w-100">
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                        </ul>
+                                        <ul class="city w-100">
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                        </ul>
+                                        <ul class="city w-100">
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                        </ul>
+                                        <ul class="city w-100">
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                        </ul>
+                                        <ul class="city w-100">
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                        </ul>
+                                        <ul class="city w-100">
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                            <li>Abu Road</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        </nav>
+        <!-- main navbar end -->
+    </div>
+    <!-- second navs start -->
+
+    <!-- second navs end -->
+    <!-- first Carousel start -->
+    <div id="carouselExampleControls" class="carousel slide my-3" data-bs-ride="carousel">
+        <div class="carousel-inner px-lg-5">
+            <div class="carousel-item active">
+                <img src="/Images/Slider3" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Images/Slider 2" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Images/Slider Bhajan" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- first Carousel end -->
+
+</body>
+
+</html>
