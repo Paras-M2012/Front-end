@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "Name":"Paras Panchal",
+        "age": 29,
+        "Product":"Milton water bottle"
+    },
+
+    {
+        "id":2,
+        "Name":"Paras Vankar",
+        "age": 25,
+        "Product":"Borossil Lunch Box"
+    },
+
+    {
+        "id":3,
+        "Name":"Riya Panchal",
+        "age": 31,
+        "Product":"Set Of Cup - 6"
+    },
+
+    {
+        "id":1,
+        "Name":"Mantra Panchal",
+        "age": 1,
+        "Product":"Silicon Spoon For lunch/dinner"
+    }
+]

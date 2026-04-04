@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- JSON (JavaScript Object Notation) is a lightweight, text-based, language-independent data interchange format used to
+    store and transmit data, primarily between servers and web applications.
+
+    Supported Data Types:
+    Object: { "key": "value" }.
+    Array: [ "value1", "value2" ].
+    String: "Hello, World!".
+    Number: 123, 12.3.
+    Boolean: true, false.
+    Null: null.
+
+        1) lightweight 
+        2) easy to use read 
+        3) back-rest api -->
+
+    <!-- types of Syntax -->
+
+    <!-- let ob = `[
+    {
+    "id":1,
+    "name":"shubham",
+    "course":"front-end"
+    }
+    ]`
+
+    let obj = [
+    {
+    id : 1,
+    name : "shubham",
+    coruse : "front-end"
+    }
+    ] -->
+
+    <script>
+
+        let data = `[
+
+        
+    {
+        "id":1,
+        "Name":"Paras Panchal",
+        "age": "29",
+        "Product":"Milton water bottle"
+    },
+
+    {
+        "id":"2",
+        "Name":"Paras Vankar",
+        "age": "25",
+        "Product":"Borossil Lunch Box"
+    },
+
+    {
+        "id":"3",
+        "Name":"Riya Panchal",
+        "age": "31",
+        "Product":"Set Of Cup - 6"
+    },
+
+    {
+        "id":"4",
+        "Name":"Mantra Panchal",
+        "age": "1",
+        "Product":"Silicon Spoon For lunch/dinner"
+    }
+
+ ]`
+
+        console.log(data)
+
+        // This creat from same copy data to array
+        let jsondata = JSON.parse(data)
+        console.log(jsondata)
+
+       jsondata.forEach((data,index)=> {
+            console.log("id :" , data.id, "Name :", data.Name)
+            document.write(`<h2>id : ${data.id} Name : ${data.Name} age : ${data.age} Product : ${data.Product}</h2>`)
+       });
+
+
+       let users = [
+            {
+                id : 1,
+                name : "Paras Panchal",
+                age : 21,
+                occupation : "incharge"
+            },
+             {
+                id : 1,
+                name : "Paras vankar",
+                age : 25,
+                occupation : "HOD"
+            },
+             {
+                id : 1,
+                name : "Dr Samyak doshi",
+                age : 31,
+                occupation : "Medical officer"
+            },
+             {
+                id : 1,
+                name : "Dr Saurabh Kori",
+                age : 41,
+                occupation : "M S surgeon"
+            }
+       ]
+
+            console.log(users)
+
+            let maindata = JSON.stringify(users)
+            console.log(maindata)
+            // document.writeln(maindata)
+
+    </script>
+</body>
+
+</html>

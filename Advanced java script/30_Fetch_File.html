@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- The Fetch API is a modern interface in JavaScript that allows you to make HTTP requests.
+
+    Common HTTP Request Methods in Fetch API
+    GET: This request helps to retrieve some data from another server.
+    POST: This request is used to add some data onto the server.
+    PUT/ PATCH : This request is used to update some data on the server.
+    DELETE: This request is used to delete some data on the server. -->
+
+     <!-- fetch : inbuilt javascript function
+    Method : 
+    get : read 
+    post : new data 
+    put/patch : update 
+    delete : remove 
+    
+    
+    fetch('',{
+        method : "GET"
+    })
+    .then(()=>{
+        convert
+    })
+    .then(()=>{
+        print 
+    })
+    .catch(errr)
+
+    -->
+    <h1 id="h1"></h1>
+
+
+<script>
+        fetch("fetch.txt",{
+            method:"GET"
+        })
+
+        .then((res)=>{
+            // console.log(res)
+            // text file promise to string
+            return res.text()
+        })
+
+        .then((data)=>{
+            // this syntax will show your data in console
+            console.log(data)
+            // This syntax will show your data in Body
+            document.getElementById("h1").innerHTML = data
+        })
+
+        .catch((error)=>{
+            console.log(Error)
+        })
+
+
+        
+</script>
+
+
+</body>
+
+</html>

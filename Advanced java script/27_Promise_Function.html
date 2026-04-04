@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Core Methods and Usage
+    Promises are consumed using methods attached to the promise object:
+
+    .then(onFulfilled, onRejected):
+    This method attaches handlers for both the fulfillment and rejection cases. It returns a new promise, which enables
+    method chaining.
+
+    .catch(onRejected):
+    This is a shorthand for .then(null, onRejected) and is typically used to handle errors at the end of a promise
+    chain.
+
+    .finally(onFinally):
+    This handler is called when the promise is settled (either fulfilled or rejected), regardless of the outcome. It's
+    useful for cleanup operations. -->
+
+    <!-- Syntax
+
+    let promise = Promise.resolve("OK");
+
+    promise
+    .then(function(value) {
+    console.log(value);
+    })
+    .catch(function(value) {
+    myDisplayer(value);
+    }); -->
+
+
+    <script>
+        function output(res) {
+            console.log(res)
+        }
+
+        let data = new Promise(function (res, rej) {
+           let x = 10
+            if (x == 10) {
+                res("success msg..")
+            }
+            else {
+                rej("reject value")
+            }
+        })
+            .then(function (res) {
+                output(res)
+            })
+            .catch((err) => {
+                output(err)
+            })
+            .finally(() => {
+                console.log("Promise finished (success or failure).");
+            })
+
+    </script>
+</body>
+
+</html>

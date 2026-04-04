@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+    A Promise can be in one of three exclusive states:
+   1) pending -	operation started (not finished)
+   2) rejected - operation failed
+   3) fulfilled - operation completed 
+   -->
+
+    <!-- 
+    Pending:
+        The initial state; the operation has started but is neither fulfilled nor rejected.
+
+    Fulfilled:
+        The operation completed successfully, and a value is available.
+
+    Rejected:
+        The operation failed, and a reason (error) is available. 
+        -->
+
+    <!-- 
+        This Syntax will work for promise
+        let myPromise = new Promise(function(resolve, reject) {
+
+        // Code that may take some time
+
+         resolve(value); // when successful
+         reject(value);  // when error
+    });
+
+        -->
+
+    <!-- Parameter	        Description
+            resolve	            function to run if finishes successfully
+            reject	            function to run if finishes with an error -->
+
+    <script>
+
+        let data = new Promise(function (res, rej) {
+            let x = 10
+            if (x == 10) {
+                res("success msg..")
+            }
+            else {
+                rej("reject value")
+            }
+        })
+
+        console.log(data)
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Method Reuse
+    The apply() method lets you write a method that can be used on different objects.
+    
+    The apply() method is used to call a function with a specific this.
+    
+    The apply() method is similar to call(), but it passes arguments in an array.
+    
+    Note
+    apply() is an advanced topic.
+    
+    Make sure you understand this and call() before continuing.
+    
+    The this Keyword
+    
+    The call() Method
+    
+    Basic apply() Syntax
+    The apply() method is used to call a function with an object as an argument.
+    
+    The apply() method takes this as the first argument.
+    
+    The second argument is an array of values passed to the function.
+    
+    The apply() method is similar to the call() method (previous chapter).
+    
+    Syntax
+    functionName.apply(this, [arg1, arg2, ...]); -->
+
+
+    <script>
+
+        // call
+
+        let data = {
+            fullname: function (city, state) {
+                console.log("fname :", this.fname, " lname :", this.lname, " city : ", city, " state : ", state)
+            }
+        }
+
+        let perosn = {
+            fname: "het",
+            lname: "patel"
+        }
+
+        data.fullname.call(perosn, "Vadodra", "gujarat")
+
+        // call sparate argument
+
+        let perosn1 = {
+            fname: "shubham",
+            lname: "jadav"
+        }
+
+        data.fullname.apply(perosn1, ["Ahmedabad", "gujarat"])
+        // apply as array argument
+
+    </script>
+
+
+</body>
+
+</html>
