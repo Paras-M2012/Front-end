@@ -1,8 +1,13 @@
 import React from "react";
+// import FuncState from "./State/FuncState";
+import FuncObj from "./State/FuncObj";
+// import MainProps from "./Props/MainProps";
+// import ClassState from "./State/ClassState";
+// import MainProps from "./Component/Props/MainProps";
 // import ClassCompo from "./Component/Classcomponent";
 // import FuncCompo from "./Component/FunctionComponent";
 // import Hello from "./JSX/Hello";
-import Css from "./CSS/css";
+// import Css from "./CSS/css";
 
 function App() {
   return (
@@ -12,7 +17,13 @@ function App() {
       {<FuncCompo/>} */}
       {/* {<jsx/>} */}
 
-      <Css/>
+      {/* <Css/> */}
+        
+      {/* {<MainProps/>} */}
+      {/* {<ClassState/>} */}
+
+      {/* {<FuncState/>} */}
+      {<FuncObj/>}
     </div>
   );
 }
