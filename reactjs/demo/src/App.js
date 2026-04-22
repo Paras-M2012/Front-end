@@ -1,6 +1,17 @@
 import React from "react";
+// import BootComponent from "./Design/BootComponent";
+// import Footer from "./Design/Footer";
+// import ReactCard from "./Design/ReactCards";
+// import A from "./Context/PropsDrilling/A";
+// import MainContext from "./Context/MainContext";
+// import UserTable from "./Effect/UserTable";
+// import UserTableAx from "./Effect/UserTableAx";
+// import CardProduct from "./Effect/CardProduct";
+// import DataEffect from "./Effect/DataEffect";
+// import Formdata from "./Formhandling/Formdata";
+// import Formobj from "./Formhandling/Formobj";
 // import FuncState from "./State/FuncState";
-import FuncObj from "./State/FuncObj";
+// import FuncObj from "./State/FuncObj";
 // import MainProps from "./Props/MainProps";
 // import ClassState from "./State/ClassState";
 // import MainProps from "./Component/Props/MainProps";
@@ -8,6 +19,7 @@ import FuncObj from "./State/FuncObj";
 // import FuncCompo from "./Component/FunctionComponent";
 // import Hello from "./JSX/Hello";
 // import Css from "./CSS/css";
+
 
 function App() {
   return (
@@ -23,7 +35,19 @@ function App() {
       {/* {<ClassState/>} */}
 
       {/* {<FuncState/>} */}
-      {<FuncObj/>}
+      {/* {<FuncObj/>} */}
+
+      {/* {<Formdata/>} */}
+        {/* {<Formobj/>} */}
+        {/* {<CardProduct/>} */}
+        {/* < DataEffect/> */}
+      {/* < UserTable/> */}
+      {/* < UserTableAx/> */}
+      {/* <A/> */}
+      {/* < MainContext/> */}
+      {/* < BootComponent/> */}
+      {/* < Footer/> */}
+      {/* < ReactCard/> */}
     </div>
   );
 }

@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import Imagedata from './Imagedata'
+// import Imagedata from './Imagedata'
 
 function FuncObj() {
 
     const [data,setdata] = useState({
         Name : "Rohit Panchal",
         count : 1,
-        isImage : true
+        // isImage : true
     })
   return (
     <div>
@@ -22,14 +22,8 @@ function FuncObj() {
         <button onClick={()=>setdata({...data,count:0})}>Zero</button>
     
         <br /><br /><br />
-        <button onClick={()=>setdata({...data,isImage:data.isImage })}>HIDE</button>
-        <button onClick={()=>setdata({...data,isImage:data.isImage})}>SHOW</button>
-        {/* <button onClick={()=>setdata({...data,isImage:})}>Toggle</button> */}
-        
-        {
-            isImage ? <Imagedata/> : false   
-        }
-
+       
+      
     </div>
   )
 }
