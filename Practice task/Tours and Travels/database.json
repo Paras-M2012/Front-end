@@ -1,0 +1,119 @@
+{
+    "admin":[
+        {
+            "id":1,
+            "name":"admin",
+            "email":"admin@gmail.com",
+            "password":"123456"
+        },
+        {
+            "id":2,
+            "name":"subadmin",
+            "email":"subadmin@gmail.com",
+            "password":"123456"
+        }
+    ],
+    "users":[
+        {
+            "id":1,
+            "name":"user",
+            "email":"user@gmail.com",
+            "password":"123456",
+            "status":"unblock"
+        }
+    ],
+    "package":[
+        {
+            "id":1,
+            "name":"Dolor Porta",
+            "loaction":"Thailand",
+            "desc":"Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.",
+            "days":3,
+            "img":"https://media.istockphoto.com/id/670950002/photo/national-flag-of-thailand-on-clear-blue-sky.jpg?s=2048x2048&w=is&k=20&c=HsM6g0Xnbn0XF77172Bl68lHDNgPg6hSUsv4Bq3dD8E="
+            
+        },
+        {
+            "id":2,
+            "name":"tokyo",
+            "loaction":"japan",
+            "desc":"Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.",
+            "days":6,
+            "img":"https://media.istockphoto.com/id/1438080749/photo/panoramic-view-of-tokyo-and-japanese-flag-japan.jpg?s=2048x2048&w=is&k=20&c=QIgrZGJU6XdTaFGj-qcac3iXnwNbV1kcA9y9ZOiy7cg="
+            
+        },
+        {
+            "id":3,
+            "name":"Safari World Bangkok",
+            "loaction":"Bangkok",
+            "desc":"Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.",
+            "days":4,
+            "img":"https://cdn.pixabay.com/photo/2014/11/03/17/40/leopard-515509_1280.jpg"
+            
+        }
+
+    ],
+    "Service": [
+        {
+            "id":1,
+            "name":"Ocean Cruises",
+            "desc":"Our travel agency specializes in providing our customers with the best deals on airline tickets.",
+            "icons":"fa fa-bus"
+        },
+        {
+            "id":2,
+            "name":"Means of Transport",
+            "desc":"Our travel agency specializes in providing our customers with the best deals on airline tickets.",
+            "icons":"fa fa-contao"
+        },
+         {
+            "id":3,
+            "name":"Airline Tickets",
+            "desc":"Our travel agency specializes in providing our customers with the best deals on airline tickets.",
+            "icons":"fa fa-car"
+        },
+         {
+            "id":4,
+            "name":"Travel Insurance",
+            "desc":"Our travel agency specializes in providing our customers with the best deals on airline tickets.",
+            "icons":"fa fa-life-ring"
+        }
+    ],
+    "Blogs":[
+        {
+            "id":1,
+            "name":"Summer in Europe: Best Places to Visit & Travel Tips for 2026",
+            "desc":"Planning a European holiday in summer 2026? It’s one of the best times to explore the continent, thanks to longer daylight hours, lively streets, and a vibrant cultural atmosphere. From iconic cities to scenic countryside escapes, Europe offers a perfect mix of experiences for travelers seeking memorable international tours.",
+            "date":"13 Apr 2026"
+        },
+        {
+            "id":2,
+            "name":"Thailand Tour Packages for Summer vs Winter:When should you travel?",
+            "desc":"Planning a trip to Thailand often begins with excitement but quickly turns into confusion when deciding the right time to visit. Most travelers assume winter is the best season, but that’s not always true.",
+            "date":"07 Apr 2026"
+        },
+        {
+            "id":3,
+            "name":"Hong Kong Travel Guide: Everything You Need to Know Before you go",
+            "desc":"Planning a trip to Hong Kong offers an exciting blend of modern city life, cultural heritage, and scenic landscapes. Whether you are exploring Hong Kong trips or organizing your own itinerary, having the right information can make your journey smooth and memorable. This Hong Kong travel guide covers essential details to help you plan efficiently and experience the destination with confidence. ",
+            "date":"27 March 2026"
+        },
+         {
+            "id":4,
+            "name":"Top Places to Visit in Sikkim and Darjeeling for First time Travelers",
+            "desc":"Planning your first trip to the Eastern Himalayas? Sikkim and Darjeeling offer an unforgettable blend of serene landscapes, rich culture, and breathtaking mountain views. Whether you're looking for peaceful monasteries, scenic tea gardens, or high-altitude adventures, this region has something for every traveler. With thoughtfully curated Sikkim Darjeeling tour packages, even first-time visitors can explore the highlights without hassle.",
+            "date":"04 April 2026"
+        },
+        {
+            "id":5,
+            "name":"Hidden Gems in Leh Ladakh Only Locals Know About",
+            "desc":"Leh Ladakh is often portrayed through iconic visuals of Pangong Lake and Nubra Valley, but beyond these popular spots lies a world that only locals truly understand. These hidden gems offer raw beauty, cultural depth, and peaceful experiences far from the usual tourist trail. For travelers seeking authenticity in their Leh Ladakh tours, exploring these lesser-known places can transform an ordinary trip into a deeply enriching journey. ",
+            "date":"25 April 2026"
+        },
+        {
+            "id":6,
+            "name":"Singapore for Beginners: The Ultimate First-Timer’s Guide to the Lion City",
+            "desc":"Singapore might be small on the map, but it is massive on personality. For a first-time visitor, it often feels like a Goldilocks city—it’s just right. Everything is incredibly efficient, remarkably clean, and you can jump from a futuristic neon forest to a centuries-old heritage temple in the span of a twenty-minute taxi ride.",
+            "date":"18 April 2026"
+        }
+    ]
+}
