@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../Common/Header'
 import Footer from '../Common/Footer'
+import UseApi from '../../Custom/UseApi'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 function Package() {
+//    GET API MANUALLY
+    const [pkg,setpkg] = useState([])
+// this get the all data with effect in fetchdata
+    useEffect(()=>{
+        fetchdata()
+
+    },[])
+    // data is storing in fetchdata
+    const fetchdata = async () =>{
+        const res = await axios.get("http://localhost:3000/package")
+        setpkg(res.data)
+    }
+
+    const redirect = useNavigate
     return (
         <div>
             <Header/>
@@ -181,311 +198,63 @@ function Package() {
                         <div className="col-md-9">
                             <div className="pack_1r px-4">
                                 <div className="desti3 row">
+                                    {
+                                      pkg && pkg.map((data,key)=>{
+                                        return(
+                                            <div className="col-md-6 my-3" key={data.id}>
+                                        <div className="desti3im">
+                                            <div className="desti3im1 position-relative">
+                                                <div className="desti3im1i">
+                                                    <div className="grid clearfix">
+                                                        <figure className="effect-jazz mb-0">
+                                                            <a href="detail.html"><img src={data.img} className="w-100" alt="abc" /></a>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div className="desti3im1i1 shadow_box p-3 bg-white rounded-3 position-absolute">
+                                                    <div className="desti3im1i1i row">
+                                                        <div className="col-md-6 col-6">
+                                                            <div className="desti3im1i1il">
+                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-clock-o me-1 col_green" />{data.days}</a></h6>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-md-6 col-6">
+                                                            <div className="desti3im1i1ir text-end">
+                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-envelope col_green" /></a> <a href="detail.html"><i className="fa fa-map-pin col_green ms-2" /></a></h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="desti3im1i2 top-0 position-absolute w-100 text-end p-3">
+                                                    <h6 className="d-inline-block mb-0 bg_green text-white p-1 px-3 font_14 rounded_50">SALE</h6>
+                                                </div>
+                                            </div>
+                                            <div className="desti3im2 shadow_box p-4">
+                                                <h5 className="mt-4 fs-4"><a href="detail.html">{data.name}</a></h5>
+                                                <h6><i className="fa fa-map-marker me-1 col_green" /> {data.location}</h6>
+                                                <hr />
+                                                <p>{data.desc}</p>
+                                                <hr />
+                                                <div className="desti3im2i row">
+                                                    <div className="col-md-6 col-6">
+                                                        <div className="desti3im2il">
+                                                            <h6 className="mb-0 mt-2"><button className="button btn" onClick={()=>("/packagedetails", {state: key})}>More Details</button></h6>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-6 col-6">
+                                                        <div className="desti3im2ir text-end">
+                                                            <h4 className="mb-0"><span className="fw-normal font_14 text-muted">From</span><br />
+                                                                $ {data.price}</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        )
+                                      })  
+                                    }
                                     
-                                    <div className="col-md-6">
-                                        <div className="desti3im">
-                                            <div className="desti3im1 position-relative">
-                                                <div className="desti3im1i">
-                                                    <div className="grid clearfix">
-                                                        <figure className="effect-jazz mb-0">
-                                                            <a href="detail.html"><img src="img/7.jpg" className="w-100" alt="abc" /></a>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i1 shadow_box p-3 bg-white rounded-3 position-absolute">
-                                                    <div className="desti3im1i1i row">
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1il">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-clock-o me-1 col_green" /> 1 Week</a></h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1ir text-end">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-envelope col_green" /></a> <a href="detail.html"><i className="fa fa-map-pin col_green ms-2" /></a></h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i2 top-0 position-absolute w-100 text-end p-3">
-                                                    <h6 className="d-inline-block mb-0 bg_green text-white p-1 px-3 font_14 rounded_50">SALE</h6>
-                                                </div>
-                                            </div>
-                                            <div className="desti3im2 shadow_box p-4">
-                                                <h5 className="mt-4 fs-4"><a href="detail.html">Lorem Amet</a></h5>
-                                                <h6><i className="fa fa-map-marker me-1 col_green" /> Thailand</h6>
-                                                <hr />
-                                                <p>Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.</p>
-                                                <hr />
-                                                <div className="desti3im2i row">
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2il">
-                                                            <h6 className="mb-0 mt-2"><a className="button" href="detail.html">Details</a></h6>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2ir text-end">
-                                                            <h4 className="mb-0"><span className="fw-normal font_14 text-muted">From</span><br />
-                                                                $ 498</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="desti3im">
-                                            <div className="desti3im1 position-relative">
-                                                <div className="desti3im1i">
-                                                    <div className="grid clearfix">
-                                                        <figure className="effect-jazz mb-0">
-                                                            <a href="detail.html"><img src="img/8.jpg" className="w-100" alt="abc" /></a>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i1 shadow_box p-3 bg-white rounded-3 position-absolute">
-                                                    <div className="desti3im1i1i row">
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1il">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-clock-o me-1 col_green" /> 2 Week</a></h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1ir text-end">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-envelope col_green" /></a> <a href="detail.html"><i className="fa fa-map-pin col_green ms-2" /></a></h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i2 top-0 position-absolute w-100 text-end p-3">
-                                                    <h6 className="d-inline-block mb-0 bg_green text-white p-1 px-3 font_14 rounded_50">SALE</h6>
-                                                </div>
-                                            </div>
-                                            <div className="desti3im2 shadow_box p-4">
-                                                <h5 className="mt-4 fs-4"><a href="detail.html">Dolor Porta</a></h5>
-                                                <h6><i className="fa fa-map-marker me-1 col_green" /> Thailand</h6>
-                                                <hr />
-                                                <p>Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.</p>
-                                                <hr />
-                                                <div className="desti3im2i row">
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2il">
-                                                            <h6 className="mb-0 mt-2"><a className="button" href="detail.html">Details</a></h6>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2ir text-end">
-                                                            <h4 className="mb-0"><span className="fw-normal font_14 text-muted">From</span><br />
-                                                                $ 398</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="desti3 row mt-4">
-                                    <div className="col-md-6">
-                                        <div className="desti3im">
-                                            <div className="desti3im1 position-relative">
-                                                <div className="desti3im1i">
-                                                    <div className="grid clearfix">
-                                                        <figure className="effect-jazz mb-0">
-                                                            <a href="detail.html"><img src="img/9.jpg" className="w-100" alt="abc" /></a>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i1 shadow_box p-3 bg-white rounded-3 position-absolute">
-                                                    <div className="desti3im1i1i row">
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1il">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-clock-o me-1 col_green" /> 1 Week</a></h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1ir text-end">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-envelope col_green" /></a> <a href="detail.html"><i className="fa fa-map-pin col_green ms-2" /></a></h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i2 top-0 position-absolute w-100 text-end p-3">
-                                                    <h6 className="d-inline-block mb-0 bg_green text-white p-1 px-3 font_14 rounded_50">SALE</h6>
-                                                </div>
-                                            </div>
-                                            <div className="desti3im2 shadow_box p-4">
-                                                <h5 className="mt-4 fs-4"><a href="detail.html">Lorem Amet</a></h5>
-                                                <h6><i className="fa fa-map-marker me-1 col_green" /> Thailand</h6>
-                                                <hr />
-                                                <p>Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.</p>
-                                                <hr />
-                                                <div className="desti3im2i row">
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2il">
-                                                            <h6 className="mb-0 mt-2"><a className="button" href="detail.html">Details</a></h6>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2ir text-end">
-                                                            <h4 className="mb-0"><span className="fw-normal font_14 text-muted">From</span><br />
-                                                                $ 498</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="desti3im">
-                                            <div className="desti3im1 position-relative">
-                                                <div className="desti3im1i">
-                                                    <div className="grid clearfix">
-                                                        <figure className="effect-jazz mb-0">
-                                                            <a href="detail.html"><img src="img/1.jpg" className="w-100" alt="abc" /></a>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i1 shadow_box p-3 bg-white rounded-3 position-absolute">
-                                                    <div className="desti3im1i1i row">
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1il">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-clock-o me-1 col_green" /> 2 Week</a></h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1ir text-end">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-envelope col_green" /></a> <a href="detail.html"><i className="fa fa-map-pin col_green ms-2" /></a></h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i2 top-0 position-absolute w-100 text-end p-3">
-                                                    <h6 className="d-inline-block mb-0 bg_green text-white p-1 px-3 font_14 rounded_50">SALE</h6>
-                                                </div>
-                                            </div>
-                                            <div className="desti3im2 shadow_box p-4">
-                                                <h5 className="mt-4 fs-4"><a href="detail.html">Dolor Porta</a></h5>
-                                                <h6><i className="fa fa-map-marker me-1 col_green" /> Thailand</h6>
-                                                <hr />
-                                                <p>Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.</p>
-                                                <hr />
-                                                <div className="desti3im2i row">
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2il">
-                                                            <h6 className="mb-0 mt-2"><a className="button" href="detail.html">Details</a></h6>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2ir text-end">
-                                                            <h4 className="mb-0"><span className="fw-normal font_14 text-muted">From</span><br />
-                                                                $ 398</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="desti3 row mt-4">
-                                    <div className="col-md-6">
-                                        <div className="desti3im">
-                                            <div className="desti3im1 position-relative">
-                                                <div className="desti3im1i">
-                                                    <div className="grid clearfix">
-                                                        <figure className="effect-jazz mb-0">
-                                                            <a href="detail.html"><img src="img/3.jpg" className="w-100" alt="abc" /></a>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i1 shadow_box p-3 bg-white rounded-3 position-absolute">
-                                                    <div className="desti3im1i1i row">
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1il">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-clock-o me-1 col_green" /> 1 Week</a></h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1ir text-end">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-envelope col_green" /></a> <a href="detail.html"><i className="fa fa-map-pin col_green ms-2" /></a></h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i2 top-0 position-absolute w-100 text-end p-3">
-                                                    <h6 className="d-inline-block mb-0 bg_green text-white p-1 px-3 font_14 rounded_50">SALE</h6>
-                                                </div>
-                                            </div>
-                                            <div className="desti3im2 shadow_box p-4">
-                                                <h5 className="mt-4 fs-4"><a href="detail.html">Lorem Amet</a></h5>
-                                                <h6><i className="fa fa-map-marker me-1 col_green" /> Thailand</h6>
-                                                <hr />
-                                                <p>Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.</p>
-                                                <hr />
-                                                <div className="desti3im2i row">
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2il">
-                                                            <h6 className="mb-0 mt-2"><a className="button" href="detail.html">Details</a></h6>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2ir text-end">
-                                                            <h4 className="mb-0"><span className="fw-normal font_14 text-muted">From</span><br />
-                                                                $ 498</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="desti3im">
-                                            <div className="desti3im1 position-relative">
-                                                <div className="desti3im1i">
-                                                    <div className="grid clearfix">
-                                                        <figure className="effect-jazz mb-0">
-                                                            <a href="detail.html"><img src="img/5.jpg" className="w-100" alt="abc" /></a>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i1 shadow_box p-3 bg-white rounded-3 position-absolute">
-                                                    <div className="desti3im1i1i row">
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1il">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-clock-o me-1 col_green" /> 2 Week</a></h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-md-6 col-6">
-                                                            <div className="desti3im1i1ir text-end">
-                                                                <h6 className="mb-0 font_14"><a href="detail.html"><i className="fa fa-envelope col_green" /></a> <a href="detail.html"><i className="fa fa-map-pin col_green ms-2" /></a></h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="desti3im1i2 top-0 position-absolute w-100 text-end p-3">
-                                                    <h6 className="d-inline-block mb-0 bg_green text-white p-1 px-3 font_14 rounded_50">SALE</h6>
-                                                </div>
-                                            </div>
-                                            <div className="desti3im2 shadow_box p-4">
-                                                <h5 className="mt-4 fs-4"><a href="detail.html">Dolor Porta</a></h5>
-                                                <h6><i className="fa fa-map-marker me-1 col_green" /> Thailand</h6>
-                                                <hr />
-                                                <p>Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.</p>
-                                                <hr />
-                                                <div className="desti3im2i row">
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2il">
-                                                            <h6 className="mb-0 mt-2"><a className="button" href="detail.html">Details</a></h6>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-6 col-6">
-                                                        <div className="desti3im2ir text-end">
-                                                            <h4 className="mb-0"><span className="fw-normal font_14 text-muted">From</span><br />
-                                                                $ 398</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div className="pages mt-4 text-center row">
                                     <div className="col-md-12">

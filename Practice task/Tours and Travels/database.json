@@ -1,119 +1,293 @@
 {
-    "admin":[
-        {
-            "id":1,
-            "name":"admin",
-            "email":"admin@gmail.com",
-            "password":"123456"
-        },
-        {
-            "id":2,
-            "name":"subadmin",
-            "email":"subadmin@gmail.com",
-            "password":"123456"
-        }
-    ],
-    "users":[
-        {
-            "id":1,
-            "name":"user",
-            "email":"user@gmail.com",
-            "password":"123456",
-            "status":"unblock"
-        }
-    ],
-    "package":[
-        {
-            "id":1,
-            "name":"Dolor Porta",
-            "loaction":"Thailand",
-            "desc":"Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.",
-            "days":3,
-            "img":"https://media.istockphoto.com/id/670950002/photo/national-flag-of-thailand-on-clear-blue-sky.jpg?s=2048x2048&w=is&k=20&c=HsM6g0Xnbn0XF77172Bl68lHDNgPg6hSUsv4Bq3dD8E="
-            
-        },
-        {
-            "id":2,
-            "name":"tokyo",
-            "loaction":"japan",
-            "desc":"Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.",
-            "days":6,
-            "img":"https://media.istockphoto.com/id/1438080749/photo/panoramic-view-of-tokyo-and-japanese-flag-japan.jpg?s=2048x2048&w=is&k=20&c=QIgrZGJU6XdTaFGj-qcac3iXnwNbV1kcA9y9ZOiy7cg="
-            
-        },
-        {
-            "id":3,
-            "name":"Safari World Bangkok",
-            "loaction":"Bangkok",
-            "desc":"Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.",
-            "days":4,
-            "img":"https://cdn.pixabay.com/photo/2014/11/03/17/40/leopard-515509_1280.jpg"
-            
-        }
-
-    ],
-    "Service": [
-        {
-            "id":1,
-            "name":"Ocean Cruises",
-            "desc":"Our travel agency specializes in providing our customers with the best deals on airline tickets.",
-            "icons":"fa fa-bus"
-        },
-        {
-            "id":2,
-            "name":"Means of Transport",
-            "desc":"Our travel agency specializes in providing our customers with the best deals on airline tickets.",
-            "icons":"fa fa-contao"
-        },
-         {
-            "id":3,
-            "name":"Airline Tickets",
-            "desc":"Our travel agency specializes in providing our customers with the best deals on airline tickets.",
-            "icons":"fa fa-car"
-        },
-         {
-            "id":4,
-            "name":"Travel Insurance",
-            "desc":"Our travel agency specializes in providing our customers with the best deals on airline tickets.",
-            "icons":"fa fa-life-ring"
-        }
-    ],
-    "Blogs":[
-        {
-            "id":1,
-            "name":"Summer in Europe: Best Places to Visit & Travel Tips for 2026",
-            "desc":"Planning a European holiday in summer 2026? It’s one of the best times to explore the continent, thanks to longer daylight hours, lively streets, and a vibrant cultural atmosphere. From iconic cities to scenic countryside escapes, Europe offers a perfect mix of experiences for travelers seeking memorable international tours.",
-            "date":"13 Apr 2026"
-        },
-        {
-            "id":2,
-            "name":"Thailand Tour Packages for Summer vs Winter:When should you travel?",
-            "desc":"Planning a trip to Thailand often begins with excitement but quickly turns into confusion when deciding the right time to visit. Most travelers assume winter is the best season, but that’s not always true.",
-            "date":"07 Apr 2026"
-        },
-        {
-            "id":3,
-            "name":"Hong Kong Travel Guide: Everything You Need to Know Before you go",
-            "desc":"Planning a trip to Hong Kong offers an exciting blend of modern city life, cultural heritage, and scenic landscapes. Whether you are exploring Hong Kong trips or organizing your own itinerary, having the right information can make your journey smooth and memorable. This Hong Kong travel guide covers essential details to help you plan efficiently and experience the destination with confidence. ",
-            "date":"27 March 2026"
-        },
-         {
-            "id":4,
-            "name":"Top Places to Visit in Sikkim and Darjeeling for First time Travelers",
-            "desc":"Planning your first trip to the Eastern Himalayas? Sikkim and Darjeeling offer an unforgettable blend of serene landscapes, rich culture, and breathtaking mountain views. Whether you're looking for peaceful monasteries, scenic tea gardens, or high-altitude adventures, this region has something for every traveler. With thoughtfully curated Sikkim Darjeeling tour packages, even first-time visitors can explore the highlights without hassle.",
-            "date":"04 April 2026"
-        },
-        {
-            "id":5,
-            "name":"Hidden Gems in Leh Ladakh Only Locals Know About",
-            "desc":"Leh Ladakh is often portrayed through iconic visuals of Pangong Lake and Nubra Valley, but beyond these popular spots lies a world that only locals truly understand. These hidden gems offer raw beauty, cultural depth, and peaceful experiences far from the usual tourist trail. For travelers seeking authenticity in their Leh Ladakh tours, exploring these lesser-known places can transform an ordinary trip into a deeply enriching journey. ",
-            "date":"25 April 2026"
-        },
-        {
-            "id":6,
-            "name":"Singapore for Beginners: The Ultimate First-Timer’s Guide to the Lion City",
-            "desc":"Singapore might be small on the map, but it is massive on personality. For a first-time visitor, it often feels like a Goldilocks city—it’s just right. Everything is incredibly efficient, remarkably clean, and you can jump from a futuristic neon forest to a centuries-old heritage temple in the span of a twenty-minute taxi ride.",
-            "date":"18 April 2026"
-        }
-    ]
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "subadmin",
+      "email": "subadmin@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    }
+  ],
+  "package": [
+    {
+      "id": "3",
+      "name": "Safari World Bangkok",
+      "location": "Bangkok",
+      "desc": "Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.",
+      "days": 4,
+      "img": "https://cdn.pixabay.com/photo/2014/11/03/17/40/leopard-515509_1280.jpg"
+    },
+    {
+      "id": "QIsAEGieIj4",
+      "name": "Paris with Germany tour",
+      "location": "Europe",
+      "desc": "Experience the beauty and diversity of South Africa on this 10 Nights / 11 Days journey covering Cape Town, the scenic Garden Route and an exciting wildlife safari. From breathtaking views at Table Mountain and coastal drives along Chapman’s Peak to visits to the Cape of Good Hope and charming waterfront areas, the tour offers a perfect blend of natural beauty and vibrant city life. \nTravel through picturesque landscapes along the Garden Route, explore beautiful towns and enjoy memorable sightseeing experiences.",
+      "days": "5",
+      "price": "2500",
+      "img": "https://media.istockphoto.com/id/503874284/photo/berlin-skyline-with-spree-river-at-sunset-germany.jpg?s=2048x2048&w=is&k=20&c=W-sNcPqy_UAgrXtEqhtV1i0M9oWBfjVqajBzcw_uHJg="
+    },
+    {
+      "id": "mXXFV2KkvM0",
+      "name": "Naturally New Zealand With Chef",
+      "location": "New Zealand",
+      "desc": "New Zealand[a] is an island country in the southwestern Pacific Ocean. It consists of two main landmasses—the North Island (Te Ika-a-Māui) and the South Island (Te Waipounamu)—and over 600 smaller islands. It is the sixth-largest island country by area and lies east of Australia across the Tasman Sea and south of the islands of New Caledonia, Fiji, and Tonga. The country's varied topography and sharp mountain peaks, including the Southern Alps (Kā Tiritiri o te Moana), owe much to tectonic uplift and volcanic eruptions. New Zealand's capital city is Wellington, and its most populous city is Auckland.",
+      "days": "10",
+      "price": "2500",
+      "img": "https://th.bing.com/th/id/OIP.Too8eqkc0uc2S6fC2Ok-gAHaFj?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "id": "I7dtmC6U4Gw",
+      "name": "Nainital, Bhimtal, and Sattal Lake Tour",
+      "location": "Uttarakhand",
+      "desc": "Discover the serene lakes of Kumaon on a 3-day tour from Nainital. Visit the iconic Naini Lake, Naina Devi Temple, and Snow View Point, and explore Bhimtal Lake, Victoria Dam, and Sattal.\n",
+      "days": "7N 8D",
+      "price": "1355",
+      "img": "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=395,height=400,dpr=2/tour_img/8c823add493004f77d23eb7b976b250016a81801950f269f507954994419246f.jpg"
+    },
+    {
+      "id": "4fW5ZB2l2KE",
+      "name": "Amsterdam: Canal Cruise with Unlimited Drinks & Bite option",
+      "location": "Flagship Amsterdam",
+      "desc": "See Amsterdam best way possible on a boat with a live guide and optional unlimited drinks. On sunny days cruise on an open boat. If it rains, enjoy a warm and covered classic saloon boat instead.\n",
+      "days": "11N 12D",
+      "price": "1938",
+      "img": "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=395,height=400,dpr=2/tour_img/bb7cb01e240d0d884937e7306ed87abf73601f46b754a2b4caea3de55676ab4a.jpeg"
+    },
+    {
+      "name": "Amsterdam: Keukenhof Tulip Gardens & Zaanse Schans Day Tour",
+      "location": "HopOn HopOff Holland",
+      "desc": "Discover the beauty of the Dutch countryside on our day trip from Amsterdam. Enjoy the stunning Keukenhof, home to millions of flowers, and explore the charming windmill village of Zaanse Schans.",
+      "price": "58",
+      "img": "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=395,height=400,dpr=2/tour_img/29f0be70f67730b13a1d20705d9d422fc6d7313af5b76419e805a5e1652e47ff.jpg",
+      "id": "w18J3UYIXBY",
+      "days": "2N 3D"
+    },
+    {
+      "id": "7TtBBusmsrk",
+      "name": "From Manchester: 4 Day Journey to Scotland Inc. Admission",
+      "location": "Rabbie's Small Group Tours",
+      "desc": "Historic, dramatic, unforgettable. Perhaps you won’t return to England after journeying through some of Scotland's most passionate places.",
+      "days": "5N 6D",
+      "price": "432",
+      "img": "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=395,height=400,dpr=2/tour_img/5ca02adb884fcc7c34d20231efb99b82f7576eecab2ae712d1549067343c5130.jpg"
+    },
+    {
+      "id": "cri0RBlOiis",
+      "name": "Paris: Big Bus Hop-On Hop-Off Tour with Optional Cruise",
+      "location": "Big Bus Tours/LES CARS ROUGES",
+      "desc": "Explore Paris with a 24 or 48-hour hop-on hop-off ticket. Marvel at sights like the Eiffel Tower, Louvre, Notre Dame, and Arc de Triomphe, with the option to add a boat cruise along the Seine River.",
+      "days": "2D",
+      "price": "25",
+      "img": "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=390,height=400,dpr=2/tour_img/3cf4123fcbe181657f6ee4593ad65e2d415539d8932cc862fcc2e26fe88f68af.png"
+    },
+    {
+      "id": "vLRhbfdhw6g",
+      "name": "Wonderful West Coast",
+      "location": "UNITED STATES OF AMERICA",
+      "desc": "Discover San Francisco’s Golden Gate Bridge, Yosemite National Park, Death Valley, Monument Valley, and Bryce Canyon. Tours often include Las Vegas for entertainment and sightseeing",
+      "days": "5",
+      "price": "1987",
+      "img": "https://www.thomascook.in/holidays/holiday_pdp_slider.html?pkgId=PKG014408"
+    }
+  ],
+  "Service": [
+    {
+      "id": "1",
+      "name": "Ocean Cruises",
+      "desc": "Our travel agency specializes in providing our customers with the best deals on airline tickets.",
+      "icons": "fa fa-bus"
+    },
+    {
+      "id": "2",
+      "name": "Means of Transport",
+      "desc": "Our travel agency specializes in providing our customers with the best deals on airline tickets.",
+      "icons": "fa fa-contao"
+    },
+    {
+      "id": "3",
+      "name": "Airline Tickets",
+      "desc": "Our travel agency specializes in providing our customers with the best deals on airline tickets.",
+      "icons": "fa fa-car"
+    },
+    {
+      "id": "4",
+      "name": "Travel Insurance",
+      "desc": "Our travel agency specializes in providing our customers with the best deals on airline tickets.",
+      "icons": "fa fa-life-ring"
+    }
+  ],
+  "Blogs": [
+    {
+      "id": "1",
+      "name": "Summer in Europe: Best Places to Visit & Travel Tips for 2026",
+      "desc": "Planning a European holiday in summer 2026? It’s one of the best times to explore the continent, thanks to longer daylight hours, lively streets, and a vibrant cultural atmosphere. From iconic cities to scenic countryside escapes, Europe offers a perfect mix of experiences for travelers seeking memorable international tours.",
+      "date": "13 Apr 2026"
+    },
+    {
+      "id": "2",
+      "name": "Thailand Tour Packages for Summer vs Winter:When should you travel?",
+      "desc": "Planning a trip to Thailand often begins with excitement but quickly turns into confusion when deciding the right time to visit. Most travelers assume winter is the best season, but that’s not always true.",
+      "date": "07 Apr 2026"
+    },
+    {
+      "id": "3",
+      "name": "Hong Kong Travel Guide: Everything You Need to Know Before you go",
+      "desc": "Planning a trip to Hong Kong offers an exciting blend of modern city life, cultural heritage, and scenic landscapes. Whether you are exploring Hong Kong trips or organizing your own itinerary, having the right information can make your journey smooth and memorable. This Hong Kong travel guide covers essential details to help you plan efficiently and experience the destination with confidence. ",
+      "date": "27 March 2026"
+    },
+    {
+      "id": "4",
+      "name": "Top Places to Visit in Sikkim and Darjeeling for First time Travelers",
+      "desc": "Planning your first trip to the Eastern Himalayas? Sikkim and Darjeeling offer an unforgettable blend of serene landscapes, rich culture, and breathtaking mountain views. Whether you're looking for peaceful monasteries, scenic tea gardens, or high-altitude adventures, this region has something for every traveler. With thoughtfully curated Sikkim Darjeeling tour packages, even first-time visitors can explore the highlights without hassle.",
+      "date": "04 April 2026"
+    },
+    {
+      "id": "5",
+      "name": "Hidden Gems in Leh Ladakh Only Locals Know About",
+      "desc": "Leh Ladakh is often portrayed through iconic visuals of Pangong Lake and Nubra Valley, but beyond these popular spots lies a world that only locals truly understand. These hidden gems offer raw beauty, cultural depth, and peaceful experiences far from the usual tourist trail. For travelers seeking authenticity in their Leh Ladakh tours, exploring these lesser-known places can transform an ordinary trip into a deeply enriching journey. ",
+      "date": "25 April 2026"
+    },
+    {
+      "id": "6",
+      "name": "Singapore for Beginners: The Ultimate First-Timer’s Guide to the Lion City",
+      "desc": "Singapore might be small on the map, but it is massive on personality. For a first-time visitor, it often feels like a Goldilocks city—it’s just right. Everything is incredibly efficient, remarkably clean, and you can jump from a futuristic neon forest to a centuries-old heritage temple in the span of a twenty-minute taxi ride.",
+      "date": "18 April 2026"
+    }
+  ],
+  "offers": [
+    {
+      "id": "1",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOaPnazUg5jb4P6OXyoOLIpUB7BRCx9iRWFg&s",
+      "title": "Half Board",
+      "price": 50,
+      "desc": "Transfers from Airport Minimum 3 Star Hotel Alcoholic beverages Incl. Museum Tickets Meals in Restaurants"
+    },
+    {
+      "id": "2",
+      "img": "https://www.google.com/imgres?q=tourist%20place&imgurl=https%3A%2F%2Fmedia.easemytrip.com%2Fmedia%2FBlog%2FIndia%2F637033873695687971%2F637033873695687971fsrzol.jpg&imgrefurl=https%3A%2F%2Fwww.easemytrip.com%2Fblog%2Fbest-places-to-visit-in-kerala&docid=QW8XdaRMOPPLpM&tbnid=g8Kwwj3J5oDpSM&vet=12ahUKEwj5wNXRl5eUAxWjwTgGHTnOJb0QnPAOegQINhAB..i&w=800&h=450&hcb=2&ved=2ahUKEwj5wNXRl5eUAxWjwTgGHTnOJb0QnPAOegQINhAB",
+      "title": "All Inclusive",
+      "price": 38,
+      "desc": "Transfers from Airport Minimum 3 Star Hotel Alcoholic beverages Incl. Museum Tickets Meals in Restaurants"
+    },
+    {
+      "id": "3",
+      "img": "https://www.swantour.com/blogs/wp-content/uploads/2018/02/Tourist-Places-in-Bangalore.jpg",
+      "title": "Excursions Included",
+      "price": 58,
+      "desc": "Transfers from Airport Minimum 3 Star Hotel Alcoholic beverages Incl. Museum Tickets Meals in Restaurants"
+    }
+  ],
+  "tours": [
+    {
+      "id": "1",
+      "img": "https://www.swantour.com/blogs/wp-content/uploads/2024/09/Explore-India-Tour.png",
+      "title": "Last Minute Summer Travel Tours",
+      "price": 930,
+      "saleprice": 430,
+      "desc": "Come to the agency to take advantage of our last minute summer trips. You can go on a cruise, in a wonderful tourist village or take an organized tour at an impactful price with 100% quality. Our offers are updated weekly so don't miss out on this fantastic opportunity.",
+      "location": "Europe",
+      "modeoftravel": "Air Travel",
+      "dates": "Summer Months",
+      "tourexpert": {
+        "name": "Ipsum Augue",
+        "photo": "",
+        "experience": "Experienced Travel Planner"
+      }
+    },
+    {
+      "id": "2",
+      "img": "https://www.edgeoftheworldtour.com/assets/img/home/edge-of-the-world-hero.webp",
+      "title": "- Journey to the Edge of the World",
+      "price": 930,
+      "saleprice": 260,
+      "desc": "Upon arrival, you’ll be greeted by your guide and transferred to your hotel. After settling in, you’ll attend an orientation meeting to go over the itinerary and meet your fellow travelers.",
+      "location": "Europe",
+      "modeoftravel": "Air Travel",
+      "dates": "Summer Months",
+      "tourexpert": {
+        "name": "Ipsum Augue",
+        "photo": "",
+        "experience": "Experienced Travel Planner"
+      }
+    },
+    {
+      "id": "3",
+      "img": "https://assets.cntraveller.in/photos/64a7ba701e94724098a80205/16:9/w_2000,h_1125,c_limit/Three-Year-Cruise-MV-Lara.jpg",
+      "title": "- Across Continents with a Cruise",
+      "price": 930,
+      "saleprice": 320,
+      "desc": "Upon arrival, you’ll be greeted by your guide and transferred to your hotel. After settling in, you’ll attend an orientation meeting to go over the itinerary and meet your fellow travelers.",
+      "location": "Europe",
+      "modeoftravel": "Air Travel",
+      "dates": "Summer Months",
+      "tourexpert": {
+        "name": "Ipsum Augue",
+        "photo": "",
+        "experience": "Experienced Travel Planner"
+      }
+    },
+    {
+      "id": "4",
+      "img": "https://images.luxuryescapes.com/fl_progressive,q_auto:eco,e_brightness_hsb:-30,dpr_2.0/bgoadaa2zrlpf5hxk1m",
+      "title": "- Quest for the Lost City of Gold",
+      "price": 930,
+      "saleprice": 470,
+      "desc": "Upon arrival, you’ll be greeted by your guide and transferred to your hotel. After settling in, you’ll attend an orientation meeting to go over the itinerary and meet your fellow travelers.",
+      "location": "Europe",
+      "modeoftravel": "Air Travel",
+      "dates": "Summer Months",
+      "tourexpert": {
+        "name": "Ipsum Augue",
+        "photo": "",
+        "experience": "Experienced Travel Planner"
+      }
+    },
+    {
+      "id": "5",
+      "img": "https://live.staticflickr.com/65535/54667250694_2de3d72bc2_b.jpg",
+      "title": "- The Great North American Road Trip",
+      "price": 930,
+      "saleprice": 290,
+      "desc": "Upon arrival, you’ll be greeted by your guide and transferred to your hotel. After settling in, you’ll attend an orientation meeting to go over the itinerary and meet your fellow travelers.",
+      "location": "Europe",
+      "modeoftravel": "Air Travel",
+      "dates": "Summer Months",
+      "tourexpert": {
+        "name": "Ipsum Augue",
+        "photo": "",
+        "experience": "Experienced Travel Planner"
+      }
+    },
+    {
+      "id": "6",
+      "img": "https://t4.ftcdn.net/jpg/01/23/50/55/360_F_123505532_29MEPKkuzjp2gNlxXx9QRLzOz9Wzjwnc.jpg",
+      "title": "- From the Highlands to the Coast",
+      "price": 930,
+      "saleprice": 540,
+      "desc": "Upon arrival, you’ll be greeted by your guide and transferred to your hotel. After settling in, you’ll attend an orientation meeting to go over the itinerary and meet your fellow travelers.",
+      "location": "Europe",
+      "modeoftravel": "Air Travel",
+      "dates": "Summer Months",
+      "tourexpert": {
+        "name": "Ipsum Augue",
+        "photo": "",
+        "experience": "Experienced Travel Planner"
+      }
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

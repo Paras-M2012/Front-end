@@ -15,12 +15,12 @@ function Home() {
                                     <div className="center_h1i1">
                                         <div className="grid clearfix">
                                             <figure className="effect-jazz mb-0">
-                                                <a href="#"><img src="img/1.jpg" className="w-100" alt="abc" /></a>
+                                                <a href="#"><img src="pic/01.jpg" className="w-100" alt="abc" /></a>
                                             </figure>
                                         </div>
                                     </div>
                                     <a href="#"><div className="center_h1i2 position-absolute w-100 text-center h-100 top-0">
-                                        <h5 className="text-white">Horse Ride</h5>
+                                        <h5 className="text-white">BRAZIL</h5>
                                         <h6 className="mb-0 font_14 text-light">Try this experience now !</h6>
                                     </div></a>
                                 </div>
@@ -28,7 +28,7 @@ function Home() {
                                     <div className="center_h1i1">
                                         <div className="grid clearfix">
                                             <figure className="effect-jazz mb-0">
-                                                <a href="#"><img src="img/2.jpg" className="w-100" alt="abc" /></a>
+                                                <a href="#"><img src="pic/02.jpg" className="w-100" alt="abc" /></a>
                                             </figure>
                                         </div>
                                     </div>
@@ -43,7 +43,7 @@ function Home() {
                                     <div className="center_h1i1">
                                         <div className="grid clearfix">
                                             <figure className="effect-jazz mb-0">
-                                                <a href="#"><img src="img/4.jpg" className="w-100" alt="abc" /></a>
+                                                <a href="#"><img src="pic/03.jpg" className="w-100" alt="abc" /></a>
                                             </figure>
                                         </div>
                                     </div>
@@ -56,7 +56,7 @@ function Home() {
                                     <div className="center_h1i1">
                                         <div className="grid clearfix">
                                             <figure className="effect-jazz mb-0">
-                                                <a href="#"><img src="img/3.jpg" className="w-100" alt="abc" /></a>
+                                                <a href="#"><img src="pic/04.jpg" className="w-100" alt="abc" /></a>
                                             </figure>
                                         </div>
                                     </div>
@@ -71,7 +71,7 @@ function Home() {
                                     <div className="center_h1i1">
                                         <div className="grid clearfix">
                                             <figure className="effect-jazz mb-0">
-                                                <a href="#"><img src="img/5.jpg" className="w-100" alt="abc" /></a>
+                                                <a href="#"><img src="pic/05.jpg" className="w-100" alt="abc" /></a>
                                             </figure>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@ function Home() {
                                     <div className="center_h1i1">
                                         <div className="grid clearfix">
                                             <figure className="effect-jazz mb-0">
-                                                <a href="#"><img src="img/6.jpg" className="w-100" alt="abc" /></a>
+                                                <a href="#"><img src="pic/06.jpg" className="w-100" alt="abc" /></a>
                                             </figure>
                                         </div>
                                     </div>
@@ -160,7 +160,7 @@ function Home() {
                                         <div className="desti3im1i">
                                             <div className="grid clearfix">
                                                 <figure className="effect-jazz mb-0">
-                                                    <a href="#"><img src="img/7.jpg" className="w-100" alt="abc" /></a>
+                                                    <a href="#"><img src="pic/07.jpg" className="w-100" alt="abc" /></a>
                                                 </figure>
                                             </div>
                                         </div>
@@ -210,7 +210,7 @@ function Home() {
                                         <div className="desti3im1i">
                                             <div className="grid clearfix">
                                                 <figure className="effect-jazz mb-0">
-                                                    <a href="#"><img src="img/8.jpg" className="w-100" alt="abc" /></a>
+                                                    <a href="#"><img src="pic/08.jpg" className="w-100" alt="abc" /></a>
                                                 </figure>
                                             </div>
                                         </div>
@@ -260,7 +260,7 @@ function Home() {
                                         <div className="desti3im1i">
                                             <div className="grid clearfix">
                                                 <figure className="effect-jazz mb-0">
-                                                    <a href="#"><img src="img/9.jpg" className="w-100" alt="abc" /></a>
+                                                    <a href="#"><img src="pic/09.jpg" className="w-100" alt="abc" /></a>
                                                 </figure>
                                             </div>
                                         </div>

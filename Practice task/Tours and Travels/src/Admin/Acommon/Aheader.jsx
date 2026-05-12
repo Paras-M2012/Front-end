@@ -70,7 +70,7 @@ function Aheader() {
                                         </a>
                                         <ul className="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
                                             <li><NavLink className="dropdown-item" to="/package"> Package</NavLink></li>
-                                            <li><NavLink className="dropdown-item border-0" to="/packagedetails"> Package Detail</NavLink></li>
+                                            <li><NavLink className="dropdown-item border-0" to="/packadd"> Package Add</NavLink></li>
                                         </ul>
                                     </li>
                                     
